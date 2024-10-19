@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <string.h>
+
 char* longestPalindrome(char* s)
 {
     size_t n = strlen(s);
