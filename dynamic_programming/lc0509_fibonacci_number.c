@@ -13,8 +13,7 @@ int fib(int n)
 
     int* f = malloc((n + 1) * sizeof * f);
 
-    f[0] = 0;
-    f[1] = 1;
+    f[0] = 0, f[1] = 1;
 
     for (int i = 2; i <= n; i++)
     {
