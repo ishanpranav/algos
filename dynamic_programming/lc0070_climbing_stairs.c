@@ -10,7 +10,7 @@ int climbStairs(int n)
     
     for (int i = 2; i <= n; i++)
     {
-        p[i] = p[i - 1] + p[i - 2];
+        p[i] = p[i - 2] + p[i - 1];
     }
 
     int a = p[n];
