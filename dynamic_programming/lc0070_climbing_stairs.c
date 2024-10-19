@@ -6,8 +6,7 @@ int climbStairs(int n)
 
     int* p = malloc((n + 1) * sizeof * p);
 
-    p[0] = 1;
-    p[1] = 1;
+    p[0] = 1, p[1] = 1;
     
     for (int i = 2; i <= n; i++)
     {
