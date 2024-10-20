@@ -1,3 +1,5 @@
+// Fibonacci number
+
 int fib(int n)
 {
     if (n < 0)
@@ -13,10 +15,10 @@ int fib(int n)
 
     for (int i = 2; i <= n; i++)
     {
-        int g = f[0] + f[1];
+        int fi = f[0] + f[1];
 
         f[0] = f[1];
-        f[1] = g;
+        f[1] = fi;
     }
 
     return f[1];

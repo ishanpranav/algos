@@ -1,5 +1,8 @@
+// Minimum path sum
+
 #include <stdlib.h>
 #define min(a, b) (((a) < (b)) ? (a) : (b))
+#define swap(t, a, b) do { t c = a; a = b; b = c; } while (0);
 
 int minPathSum(int* a[], int m, int* pn) 
 {
@@ -10,7 +13,20 @@ int minPathSum(int* a[], int m, int* pn)
     if (!n) { return 0; }
     if (m == 1 && n == 1) { return a[0][0]; }
 
-    int* s[2] = { malloc(m * sizeof **s), malloc(m * sizeof **s) };
+    int* s[2];
+    
+    s[0] = malloc(m * sizeof **s);
+    
+    if (!s[0]) { return -1; }
+
+    s[1] = malloc(m * sizeof **s);
+
+    if (!s[1]) 
+    { 
+        free(s[0]);
+        
+        return -1; 
+    }
     
     s[0][0] = a[0][0];
 
@@ -25,10 +41,7 @@ int minPathSum(int* a[], int m, int* pn)
             s[1][i] = min(s[1][i - 1], s[0][i]) + a[i][j];
         }
 
-        int* t = s[0];
-
-        s[0] = s[1];
-        s[1] = t;
+        swap(int*, s[0], s[1]);
     }
 
     int r = s[0][m - 1];

@@ -1,3 +1,5 @@
+// Delete and earn
+
 #define W_MAX 10001
 #define max(a, b) (((a) > (b)) ? (a) : (b))
 

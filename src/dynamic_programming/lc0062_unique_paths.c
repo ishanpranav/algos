@@ -1,3 +1,5 @@
+// Unique paths
+
 long long binomial(int n, int k)
 {
     if (k > n - k)
@@ -15,4 +17,4 @@ long long binomial(int n, int k)
     return a;
 }
 
-int uniquePaths(int m, int n) { return binomial(m + n - 2, n - 1); }
+int uniquePaths(int m, int n) { return binomial((m - 1) + (n - 1), n - 1); }
