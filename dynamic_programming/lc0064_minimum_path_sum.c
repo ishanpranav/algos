@@ -8,7 +8,6 @@ int minPathSum(int* a[], int m, int* pn)
     int n = *pn;
 
     if (!n) { return 0; }
-
     if (m == 1 && n == 1) { return a[0][0]; }
 
     int* s[2] = { malloc(m * sizeof **s), malloc(m * sizeof **s) };
