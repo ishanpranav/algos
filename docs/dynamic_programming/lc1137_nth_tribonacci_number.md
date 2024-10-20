@@ -18,7 +18,7 @@ $$
 If $n<1$, then return $0$.
 If instead $n<3$, then return $1$.
 
-Let $t_0=0$,$t_1=1$, and $t_2=2$.
+Let $t_0=0$, $t_1=1$, and $t_2=2$.
 
 For $i=3$ to $n$:
 
