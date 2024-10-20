@@ -13,7 +13,7 @@ int rob(int v[], int n)
 
     for (int i = 2; i <= n; i++)
     {
-        int t = max(v[i - 1] + m[0], m[1]);
+        int t = max(m[0] + v[i - 1], m[1]);
 
         m[0] = m[1];
         m[1] = t;
