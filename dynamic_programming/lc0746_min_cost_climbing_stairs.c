@@ -2,6 +2,8 @@
 
 int minCostClimbingStairs(int c[], int n)
 {
+    if (!c) { return 0; }
+    
     switch (n) 
     {
     case 0: return 0;
