@@ -3,6 +3,8 @@
 
 char* longestPalindrome(char* s)
 {
+    if (!s) { return s; }
+    
     size_t n = strlen(s);
 
     if (!n) { return s; }
