@@ -1,5 +1,3 @@
-#include <limits.h>
-#include <stdlib.h>
 #define min(a, b) (((a) < (b)) ? (a) : (b))
 
 int minCostClimbingStairs(int c[], int n)
