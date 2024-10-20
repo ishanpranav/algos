@@ -2,6 +2,8 @@
 
 int rob(int v[], int n)
 {
+    if (!v) { return 0; }
+    
     switch (n)
     {
     case 0: return 0;
