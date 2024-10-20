@@ -7,7 +7,7 @@ $$
 T(n)=\begin{cases}
 0,&n=0,\\
 1,&n=1,\\
-2,&n=1,\\
+1,&n=2,\\
 T(n-1)+T(n-2)+T(n-3),&n>2.
 \end{cases}
 \end{align*}
