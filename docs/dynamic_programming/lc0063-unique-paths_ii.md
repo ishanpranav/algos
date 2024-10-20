@@ -2,13 +2,14 @@
 
 > You are given an $m\times n$ array $A[1,\dots,m][1,\dots,n]$ where
 > $A[i][j]\in\{0,1\}$ for all $1\leq i\leq m$ and $1\leq j\leq n$. There is a
-> robot initially located at the top right corner, $i=0,j=0$. The robot tries to
-> move to bottom-right $i=m,j=n$. The robot can only move either down or right
-> at any point in time. A path that the robot takes cannot include any $i,j$
-> such that $A[i][j]=1$. Return the number of possible unique paths that the
-> robot can take to reach the bottom-right corner.
+> robot initially located at the top-right corner, $i=0,j=0$. The robot tries to
+> move to the bottom-right corner, $i=m,j=n$. The robot can only move either
+> down or right at any point in time. A path that the robot takes cannot include
+> any $i,j$ such that $A[i][j]=1$. Return the number of possible unique paths
+> that the robot can take to reach the bottom-right corner.
 
-**Algorithm.** UniquePathsWithObstacles $(n)$; returns the number of possible unique paths:
+**Algorithm.** UniquePathsWithObstacles $(n)$; returns the number of possible
+unique paths:
 
 If $n=0$ or $m=0$, then return $0$.
 
