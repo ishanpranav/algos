@@ -12,8 +12,7 @@ int rob(int v[], int n)
     {
         int ai = max(a[1], a[0] + v[i - 1]);
 
-        a[0] = a[1];
-        a[1] = ai;
+        a[0] = a[1], a[1] = ai;
     }
 
     return a[1];

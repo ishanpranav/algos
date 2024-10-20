@@ -13,8 +13,7 @@ Let $a_0\leftarrow 1$ and $a_1\leftarrow 1$.
 For $i=2$ to $n$:
 
 - let $a_i\leftarrow a_0+a_a$;
-- assign $a_0\leftarrow a_1$;
-- assign $a_1\leftarrow a_i$.
+- assign $a_0\leftarrow a_1$ and $a_1\leftarrow a_i$.
 
 Return $a_1$.
 

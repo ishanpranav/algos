@@ -1,3 +1,5 @@
+// n-th Tribonacci number
+
 int tribonacci(int n) 
 {
     if (n < 1) { return 0; }
@@ -7,11 +9,9 @@ int tribonacci(int n)
     
     for (int i = 3; i <= n; i++)
     {
-        int u = t[0] + t[1] + t[2];    
+        int ti = t[0] + t[1] + t[2];    
     
-        t[0] = t[1];
-        t[1] = t[2];
-        t[2] = u;
+        t[0] = t[1], t[1] = t[2], t[2] = ti;
     }
 
     return t[2];

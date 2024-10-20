@@ -17,8 +17,7 @@ int fib(int n)
     {
         int fi = f[0] + f[1];
 
-        f[0] = f[1];
-        f[1] = fi;
+        f[0] = f[1], f[1] = fi;
     }
 
     return f[1];

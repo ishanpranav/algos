@@ -20,7 +20,7 @@ $$F(-n)=(-1)^{n+1}F(n).$$
 
 > Given $n$, calculate $F(n)$.
 
-**Algorithm.** Fi b$(n)$; returns $F(n)$:
+**Algorithm.** Fib $(n)$; returns $F(n)$:
 
 If $n<0$, then:
 
@@ -34,8 +34,7 @@ Let $f_0\leftarrow 0$ and $f_1\leftarrow 1$.
 For $i=2$ to $n$:
 
 - let $f_i\leftarrow f_0+f_1$;
-- assign $f_0\leftarrow f_1$;
-- assign $f_1\leftarrow f_i$.
+- assign $f_0\leftarrow f_1$ and $f_1\leftarrow f_i$.
 
 Return $f_1$.
 

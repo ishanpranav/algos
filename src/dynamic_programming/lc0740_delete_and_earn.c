@@ -17,15 +17,14 @@ int deleteAndEarn(int w[], int n)
 
     for (int i = 0; i < n; i++) { v[w[i]] += w[i]; }
 
-    int m[2] = { 0, v[0] };
+    int a[2] = { 0, v[0] };
 
     for (int i = 2; i <= W_MAX; i++)
     {
-        int t = max(m[0] + v[i - 1], m[1]);
+        int ai = max(a[0] + v[i - 1], a[1]);
 
-        m[0] = m[1];
-        m[1] = t;
+        a[0] = a[1], a[1] = ai;
     }
 
-    return m[1];
+    return a[1];
 }
