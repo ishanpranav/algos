@@ -5,7 +5,7 @@
 > bottom right which minimizes the sum of all numbers along its path, and return
 > the minimum sum. Note that you can only move down or right on each step.
 
-**Algorithm.** MinPathSum$(A[1,\dots,m][1,\dots,n],m,n)$; returns the minimum
+**Algorithm.** MinPathSum $(A[1,\dots,m][1,\dots,n],m,n)$; returns the minimum
 path sum:
 
 If $n=0$ or $m=0$, then return $0$.

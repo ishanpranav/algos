@@ -8,7 +8,7 @@
 > return the maximum total value you can rob tonight without alerting the
 > police.
 
-**Algorithm.** Rob$(v[1,\dots,n],n)$; returns the maximum total value:
+**Algorithm.** Rob $(v[1,\dots,n],n)$; returns the maximum total value:
 
 If $n=0$, then return $0$.
 

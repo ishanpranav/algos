@@ -20,12 +20,12 @@ $$F(-n)=(-1)^{n+1}F(n).$$
 
 > Given $n$, calculate $F(n)$.
 
-**Algorithm.** Fib$(n)$; returns $F(n)$:
+**Algorithm.** Fi b$(n)$; returns $F(n)$:
 
 If $n<0$, then:
 
-- if $(n\mod 2)=0$, then return $(-1)~\times$ Fib$(-n)$;
-- return Fib$(-n)$ otherwise.
+- if $(n\mod 2)=0$, then return $(-1)~\times$ Fib $(-n)$;
+- return Fib $(-n)$ otherwise.
 
 If instead $n<2$, then return $n$.
 

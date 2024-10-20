@@ -4,7 +4,7 @@
 > top. Each time you either climb $1$ or $2$ steps. In how many distinct ways
 > can you climb to the top?
 
-**Algorithm.** ClimbStairs$(n)$; returns the number of distinct ways to climb:
+**Algorithm.** ClimbStairs $(n)$; returns the number of distinct ways to climb:
 
 If $n\leq 0$, return $0$.
 

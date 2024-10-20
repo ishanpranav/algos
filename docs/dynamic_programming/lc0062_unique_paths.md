@@ -6,6 +6,6 @@
 > the number of possible unique paths that the robot can take to reach the
 > bottom-right corner.
 
-**Algorithm.** UniquePaths$(m,n)$, return $\binom{(m - 1) + (n - 1)}{(n - 1)}$.
+**Algorithm.** UniquePaths $(m,n)$, return $\binom{(m - 1) + (n - 1)}{(n - 1)}$.
 
 [Go to implementation.](../../src/dynamic_programming/lc0062_unique_paths.c)
