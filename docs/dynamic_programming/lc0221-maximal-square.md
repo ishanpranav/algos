@@ -24,7 +24,8 @@ For $i=2$ to $m$:
 - for $j=2$ to $n$:
   - assign $S_1[j]\leftarrow 0\text{ if }A[i][j]=0,\text{ otherwise }\min(S_0[j - 1], S_0[j], S_1[j - 1])+1$;
   - assign $r\leftarrow\min(r, S_1[j])$;
-- clear $S_0$ such that $S_0[j]\leftarrow j$ for all $1\leq j\leq n$;
 - swap the references $S_0$ and $S_1$.
 
 Return $r^2$.
+
+[Go to implementation.](../../src/dynamic_programming/lc0221_maximal_square.c)
