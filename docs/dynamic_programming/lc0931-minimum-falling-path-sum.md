@@ -1,12 +1,13 @@
-# Minimum path sum
+# Minimum falling path sum
 
-> Given an $m\times n$ array $A[1,\dots,m][1,\dots,n]$ where $A[i][j]\geq 0$ for
-> all $1\leq i\leq m$ and $1\leq j\leq n$, find a path from the top left to the
-> bottom right which minimizes the sum of all numbers along its path, and return
-> the minimum sum. Note that you can only move down or right on each step.
+> Given an $n\times n$ array $A[1,\dots,n][1,\dots,n]$, find a path from the top
+> left to the bottom right which minimizes the sum of any falling path through
+> $A$. A falling path starts at any element in the first row and chooses the
+> element in the next row that is either directly below or diagonally left or
+> diagonally right.
 
-**Algorithm.** MinPathSum $(A[1,\dots,m][1,\dots,n],m,n)$; returns the minimum
-path sum:
+**Algorithm.** MinFallingPathSum $(A[1,\dots,n][1,\dots,n],n)$; returns the
+minimum falling path sum:
 
 If $n=0$ or $m=0$, then return $0$.
 

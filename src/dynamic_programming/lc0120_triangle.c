@@ -1,5 +1,6 @@
 // Triangle
 
+#include <stdlib.h>
 #define min(a, b) (((a) < (b)) ? (a) : (b))
 
 int minimumTotal(int* a[], int m, int* n)
@@ -8,6 +9,8 @@ int minimumTotal(int* a[], int m, int* n)
     if (n[m - 1] == 1) { return a[0][0]; }
     
     int* s = malloc(n[m - 1] * sizeof * s);
+
+    if (!s) { return -1; }
 
     for (int j = 0; j < n[m - 1]; j++) { s[j] = a[m - 1][j]; }
 
