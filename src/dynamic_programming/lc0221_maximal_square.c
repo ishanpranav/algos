@@ -29,7 +29,7 @@ int maximalSquare(char* a[], int m, int* pn)
 
     int r = 0;
 
-    for (int j = 0; j < n; j++) 
+    for (int j = 0; j < n; j++)
     { 
         s[0][j] = a[0][j] - '0'; 
         
@@ -51,7 +51,6 @@ int maximalSquare(char* a[], int m, int* pn)
             if (s[1][j] > r) { r = s[1][j]; }
         }
 
-        memset(s[0], 0, n * sizeof ** s);
         swap(int*, s[0], s[1]);
     }
 

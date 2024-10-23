@@ -22,7 +22,6 @@ For $j=2$ to $n$, assign $S_0[j]\leftarrow S_0[j-1]+A[1][j]$.
 For $i=2$ to $m$:
 
 - assign $S_1[1]\leftarrow S_0[1]+A[i][1]$;
-- for $j=2$ to $n$: assign $S_1[j]\leftarrow\min(S_1[j-1],S_0[j])+A[i][j]$;
 - swap the references $S_0$ and $S_1$.
 
 Return $S_0[n]$.
