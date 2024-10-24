@@ -8,10 +8,7 @@ static bool set_contains_string(char* s, size_t n, char* d[], int m)
 {
     for (int i = 0; i < m; i++)
     {
-        if (strlen(d[i]) == n && memcmp(s, d[i], n) == 0)
-        {
-            return true;
-        }
+        if (strlen(d[i]) == n && memcmp(s, d[i], n) == 0) { return true; }
     }
 
     return false;
@@ -19,7 +16,13 @@ static bool set_contains_string(char* s, size_t n, char* d[], int m)
 
 bool wordBreak(char* s, char* d[], int m)
 {
+    if (!s || !d) { return false; }
+
     size_t n = strlen(s);
+
+    if (!n) { return true; }
+    if (!m) { return !n; }
+
     bool* p = calloc(n + 1, sizeof * p);
 
     if (!p) { return false; }
