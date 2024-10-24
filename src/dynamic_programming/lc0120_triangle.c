@@ -16,10 +16,7 @@ int minimumTotal(int* a[], int m, int* n)
 
     for (int i = m - 2; i >= 0; i--)
     {
-        for (int j = 0; j < n[i]; j++)
-        {
-            s[j] = min(s[j], s[j + 1]) + a[i][j];
-        }
+        for (int j = 0; j < n[i]; j++) { s[j] = min(s[j], s[j + 1]) + a[i][j]; }
     }
 
     int r = s[0];

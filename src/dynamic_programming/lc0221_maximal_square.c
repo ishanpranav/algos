@@ -4,7 +4,7 @@
 #define min(a, b) (((a) < (b)) ? (a) : (b))
 #define swap(t, a, b) do { t c = a; a = b; b = c; } while (0);
 
-int maximalSquare(char* a[], int m, int* pn) 
+int maximalSquare(char* a[], int m, int* pn)
 {
     if (!a || !m || !pn) { return 0; }
 
